@@ -12,7 +12,7 @@ class TestBaidu(seldom.TestCase):
         """
         test get request
         """
-        payload = {'source_country_code': 'sg'}
+        payload = {"source_country_code": "sg"}
         self.get("/v1/transfercarrentalapisrv/app_home", params=payload)
         self.assertStatusCode(200)
 
