@@ -1481,3 +1481,917 @@
 
 [ 2022-05-17 23:57:04 log.py | SUCCESS | generated html file: file:///D:\github\seldom-api-testing\reports\2022_05_17_23_57_02_result.html
 [ 2022-05-17 23:57:04 log.py | SUCCESS | generated log file: file:///D:\github\seldom-api-testing\reports\seldom_log.log
+ 2023-07-18 15:38:01 cache.py | INFO | Clear all cache data
+ 2023-07-18 15:38:01 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:38:01 request.py | INFO | [method]: GET      [url]: https://httpbin.org/get 
+ 2023-07-18 15:38:05 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:38:05 request.py | INFO | successful with status 200
+ 2023-07-18 15:38:05 request.py | DEBUG | [type]: json      [time]: 4.177901
+ 2023-07-18 15:38:05 request.py | DEBUG | [response]:
+ {
+  "args": {},
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b6415b-383adeb95c240f70204a3e9d"
+  },
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/get"
+}
+ 2023-07-18 15:38:05 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:38:05 case.py | INFO | 👀 assertJSON -> {'headers': {'Host': 'httpbin.org', 'User-Agent': 'python-requests/2.26.0'}}.
+ 2023-07-18 15:38:05 case.py | WARNING | ['💡 Assert data has not key: args', '💡 Assert data has not key: origin', '💡 Assert data has not key: url']
+ 2023-07-18 15:38:05 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:38:05 request.py | INFO | [method]: GET      [url]: https://httpbin.org/get 
+ 2023-07-18 15:38:37 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:38:37 request.py | INFO | successful with status 200
+ 2023-07-18 15:38:37 request.py | DEBUG | [type]: json      [time]: 31.349719
+ 2023-07-18 15:38:37 request.py | DEBUG | [response]:
+ {
+  "args": {},
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b6415f-1ee893c541f6a4b9647d1fe1"
+  },
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/get"
+}
+ 2023-07-18 15:38:37 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:38:37 case.py | INFO | 👀 assertSchema -> {
+  "type": "object",
+  "properties": {
+    "headers": {
+      "Host": "httpbin.org",
+      "User-Agent": "python-requests/2.22.0"
+    },
+    "origin": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "minLength": 20
+    }
+  }
+}.
+ 2023-07-18 15:38:37 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:38:37 request.py | INFO | [method]: GET      [url]: https://httpbin.org/get 
+ 2023-07-18 15:38:37 request.py | DEBUG | [params]:
+ {
+  "foot": "bread"
+}
+ 2023-07-18 15:38:39 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:38:39 request.py | INFO | successful with status 200
+ 2023-07-18 15:38:39 request.py | DEBUG | [type]: json      [time]: 2.517436
+ 2023-07-18 15:38:39 request.py | DEBUG | [response]:
+ {
+  "args": {
+    "foot": "bread"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b6417e-555393ba76f3b1e875b75dc2"
+  },
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/get?foot=bread"
+}
+ 2023-07-18 15:38:39 case.py | INFO | 👀 assertPath -> args.foot >> bread.
+ 2023-07-18 15:38:39 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:38:39 request.py | INFO | [method]: GET      [url]: https://httpbin.org/get 
+ 2023-07-18 15:38:39 request.py | DEBUG | [headers]:
+ {
+  "X-Account-Fullname": "bugmaster"
+}
+ 2023-07-18 15:39:21 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:39:21 request.py | INFO | successful with status 200
+ 2023-07-18 15:39:21 request.py | DEBUG | [type]: json      [time]: 42.06766
+ 2023-07-18 15:39:21 request.py | DEBUG | [response]:
+ {
+  "args": {},
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Account-Fullname": "bugmaster",
+    "X-Amzn-Trace-Id": "Root=1-64b64181-6b106014386c70ed2528ad51"
+  },
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/get"
+}
+ 2023-07-18 15:39:21 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:39:21 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:39:21 request.py | INFO | [method]: POST      [url]: https://httpbin.org/post 
+ 2023-07-18 15:39:21 request.py | DEBUG | [data]:
+ {
+  "username": "bugmaster"
+}
+ 2023-07-18 15:39:24 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:39:24 request.py | INFO | successful with status 200
+ 2023-07-18 15:39:24 request.py | DEBUG | [type]: json      [time]: 2.782762
+ 2023-07-18 15:39:24 request.py | DEBUG | [response]:
+ {
+  "args": {},
+  "data": "",
+  "files": {},
+  "form": {
+    "username": "bugmaster"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Content-Length": "18",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b641ab-0dea242031d4a7fb0b8e9447"
+  },
+  "json": null,
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/post"
+}
+ 2023-07-18 15:39:24 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:39:24 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:39:24 request.py | INFO | [method]: POST      [url]: https://httpbin.org/post 
+ 2023-07-18 15:39:24 request.py | DEBUG | [data]:
+ {
+  "key1": "value1",
+  "key2": "value2"
+}
+ 2023-07-18 15:39:28 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:39:28 request.py | INFO | successful with status 200
+ 2023-07-18 15:39:28 request.py | DEBUG | [type]: json      [time]: 4.076487
+ 2023-07-18 15:39:28 request.py | DEBUG | [response]:
+ {
+  "args": {},
+  "data": "",
+  "files": {},
+  "form": {
+    "key1": "value1",
+    "key2": "value2"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Content-Length": "23",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b641ae-742b6f24222cf07b091012ce"
+  },
+  "json": null,
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/post"
+}
+ 2023-07-18 15:39:28 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:39:28 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:39:28 request.py | INFO | [method]: DELETE      [url]: https://httpbin.org/delete 
+ 2023-07-18 15:39:30 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:39:30 request.py | INFO | successful with status 200
+ 2023-07-18 15:39:30 request.py | DEBUG | [type]: json      [time]: 2.294617
+ 2023-07-18 15:39:30 request.py | DEBUG | [response]:
+ {
+  "args": {},
+  "data": "",
+  "files": {},
+  "form": {},
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Content-Length": "0",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b641b2-12b0f8cc36e8aa825dcfb079"
+  },
+  "json": null,
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/delete"
+}
+ 2023-07-18 15:39:30 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:39:30 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:39:30 request.py | INFO | [method]: GET      [url]: https://httpbin.org/get 
+ 2023-07-18 15:39:30 request.py | DEBUG | [params]:
+ {
+  "key1": "value1",
+  "key2": "value2"
+}
+ 2023-07-18 15:39:32 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:39:32 request.py | INFO | successful with status 200
+ 2023-07-18 15:39:32 request.py | DEBUG | [type]: json      [time]: 1.863414
+ 2023-07-18 15:39:32 request.py | DEBUG | [response]:
+ {
+  "args": {
+    "key1": "value1",
+    "key2": "value2"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b641b4-7dba68557142eed44b230451"
+  },
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/get?key1=value1&key2=value2"
+}
+ 2023-07-18 15:39:32 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:39:32 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:39:32 request.py | INFO | [method]: POST      [url]: https://httpbin.org/post 
+ 2023-07-18 15:39:32 request.py | DEBUG | [data]:
+ {
+  "key": "value"
+}
+ 2023-07-18 15:39:36 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:39:36 request.py | INFO | successful with status 200
+ 2023-07-18 15:39:36 request.py | DEBUG | [type]: json      [time]: 3.896798
+ 2023-07-18 15:39:36 request.py | DEBUG | [response]:
+ {
+  "args": {},
+  "data": "",
+  "files": {},
+  "form": {
+    "key": "value"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Content-Length": "9",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b641b6-70e07498419b5207521392ab"
+  },
+  "json": null,
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/post"
+}
+ 2023-07-18 15:39:36 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:39:36 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:39:36 request.py | INFO | [method]: PUT      [url]: https://httpbin.org/put 
+ 2023-07-18 15:39:36 request.py | DEBUG | [data]:
+ {
+  "key": "value"
+}
+ 2023-07-18 15:39:39 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:39:39 request.py | INFO | successful with status 200
+ 2023-07-18 15:39:39 request.py | DEBUG | [type]: json      [time]: 2.314907
+ 2023-07-18 15:39:39 request.py | DEBUG | [response]:
+ {
+  "args": {},
+  "data": "",
+  "files": {},
+  "form": {
+    "key": "value"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Content-Length": "9",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b641b9-32c47d4c399b26f27cdd3560"
+  },
+  "json": null,
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/put"
+}
+ 2023-07-18 15:39:39 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:39:39 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:39:39 request.py | INFO | [method]: GET      [url]: https://httpbin.org/get 
+ 2023-07-18 15:39:39 request.py | DEBUG | [params]:
+ {
+  "Forest": "Hobbs"
+}
+ 2023-07-18 15:39:42 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:39:42 request.py | INFO | successful with status 200
+ 2023-07-18 15:39:42 request.py | DEBUG | [type]: json      [time]: 3.767491
+ 2023-07-18 15:39:42 request.py | DEBUG | [response]:
+ {
+  "args": {
+    "Forest": "Hobbs"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b641bc-1539651716412e57630b017c"
+  },
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/get?Forest=Hobbs"
+}
+ 2023-07-18 15:39:42 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:39:42 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:39:42 request.py | INFO | [method]: GET      [url]: https://httpbin.org/get 
+ 2023-07-18 15:39:42 request.py | DEBUG | [params]:
+ {
+  "Ferdinand": "Lozano"
+}
+ 2023-07-18 15:39:47 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:39:47 request.py | INFO | successful with status 200
+ 2023-07-18 15:39:47 request.py | DEBUG | [type]: json      [time]: 4.545229
+ 2023-07-18 15:39:47 request.py | DEBUG | [response]:
+ {
+  "args": {
+    "Ferdinand": "Lozano"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b641c1-4056988e09277377581a30f0"
+  },
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/get?Ferdinand=Lozano"
+}
+ 2023-07-18 15:39:47 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:39:47 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:39:47 request.py | INFO | [method]: GET      [url]: https://httpbin.org/get 
+ 2023-07-18 15:39:47 request.py | DEBUG | [params]:
+ {
+  "Marshall": "Conrad"
+}
+ 2023-07-18 15:40:01 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:40:01 request.py | WARNING | unsuccessful with status 504
+ 2023-07-18 15:40:01 request.py | DEBUG | [warning]: failed to convert res to json, try to convert to text
+ 2023-07-18 15:40:01 request.py | TRACE | [warning]: Expecting value: line 1 column 1 (char 0)
+ 2023-07-18 15:40:01 request.py | DEBUG | [type]: text      [time]: 13.65138
+ 2023-07-18 15:40:01 request.py | DEBUG | [response]:
+ <html>
+<head><title>504 Gateway Time-out</title></head>
+<body>
+<center><h1>504 Gateway Time-out</h1></center>
+</body>
+</html>
+
+ 2023-07-18 15:40:01 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:40:01 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:40:01 request.py | INFO | [method]: GET      [url]: https://httpbin.org/get 
+ 2023-07-18 15:40:01 request.py | DEBUG | [params]:
+ {
+  "Marshall": "Conrad"
+}
+ 2023-07-18 15:40:03 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:40:03 request.py | INFO | successful with status 200
+ 2023-07-18 15:40:03 request.py | DEBUG | [type]: json      [time]: 2.009324
+ 2023-07-18 15:40:03 request.py | DEBUG | [response]:
+ {
+  "args": {
+    "Marshall": "Conrad"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b641d2-79274ba776b6a3a83756ada3"
+  },
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/get?Marshall=Conrad"
+}
+ 2023-07-18 15:40:03 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:40:03 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:40:03 request.py | INFO | [method]: GET      [url]: https://httpbin.org/get 
+ 2023-07-18 15:40:03 request.py | DEBUG | [params]:
+ {
+  "Ruthie": "Pitts"
+}
+ 2023-07-18 15:40:08 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:40:08 request.py | INFO | successful with status 200
+ 2023-07-18 15:40:08 request.py | DEBUG | [type]: json      [time]: 5.326321
+ 2023-07-18 15:40:08 request.py | DEBUG | [response]:
+ {
+  "args": {
+    "Ruthie": "Pitts"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b641d4-3a3742c40f54e9c162081ead"
+  },
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/get?Ruthie=Pitts"
+}
+ 2023-07-18 15:40:08 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:40:08 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:40:08 request.py | INFO | [method]: GET      [url]: https://httpbin.org/get 
+ 2023-07-18 15:40:08 request.py | DEBUG | [params]:
+ {
+  "Tom": "tom123"
+}
+ 2023-07-18 15:40:36 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:40:36 request.py | INFO | successful with status 200
+ 2023-07-18 15:40:36 request.py | DEBUG | [type]: json      [time]: 27.938806
+ 2023-07-18 15:40:36 request.py | DEBUG | [response]:
+ {
+  "args": {
+    "Tom": "tom123"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b641da-4faf3bea11636bcb4098b935"
+  },
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/get?Tom=tom123"
+}
+ 2023-07-18 15:40:36 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:40:36 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:40:36 request.py | INFO | [method]: GET      [url]: https://httpbin.org/get 
+ 2023-07-18 15:40:36 request.py | DEBUG | [params]:
+ {
+  "Jerry": "jerry123"
+}
+ 2023-07-18 15:40:41 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:40:41 request.py | INFO | successful with status 200
+ 2023-07-18 15:40:41 request.py | DEBUG | [type]: json      [time]: 4.998167
+ 2023-07-18 15:40:41 request.py | DEBUG | [response]:
+ {
+  "args": {
+    "Jerry": "jerry123"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b641f6-3c98e196349f22ee01c757b9"
+  },
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/get?Jerry=jerry123"
+}
+ 2023-07-18 15:40:41 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:40:41 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:40:41 request.py | INFO | [method]: GET      [url]: https://httpbin.org/get 
+ 2023-07-18 15:40:41 request.py | DEBUG | [params]:
+ {
+  "Wayne": "Burch"
+}
+ 2023-07-18 15:40:47 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:40:47 request.py | INFO | successful with status 200
+ 2023-07-18 15:40:47 request.py | DEBUG | [type]: json      [time]: 5.951193
+ 2023-07-18 15:40:47 request.py | DEBUG | [response]:
+ {
+  "args": {
+    "Wayne": "Burch"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b641fb-26cee2ed1d15fa492b688126"
+  },
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/get?Wayne=Burch"
+}
+ 2023-07-18 15:40:47 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:40:47 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:40:47 request.py | INFO | [method]: GET      [url]: https://httpbin.org/get 
+ 2023-07-18 15:40:47 request.py | DEBUG | [params]:
+ {
+  "Jamie-louise": "Wong"
+}
+ 2023-07-18 15:40:49 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:40:49 request.py | INFO | successful with status 200
+ 2023-07-18 15:40:49 request.py | DEBUG | [type]: json      [time]: 1.739424
+ 2023-07-18 15:40:49 request.py | DEBUG | [response]:
+ {
+  "args": {
+    "Jamie-louise": "Wong"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b64200-7372565d32c627647f1b0a38"
+  },
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/get?Jamie-louise=Wong"
+}
+ 2023-07-18 15:40:49 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:40:49 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:40:49 request.py | INFO | [method]: GET      [url]: https://httpbin.org/get 
+ 2023-07-18 15:40:49 request.py | DEBUG | [params]:
+ {
+  "Tom": "tom123"
+}
+ 2023-07-18 15:40:52 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:40:52 request.py | INFO | successful with status 200
+ 2023-07-18 15:40:52 request.py | DEBUG | [type]: json      [time]: 2.82704
+ 2023-07-18 15:40:52 request.py | DEBUG | [response]:
+ {
+  "args": {
+    "Tom": "tom123"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b64202-54b11b8c509abd843726f19c"
+  },
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/get?Tom=tom123"
+}
+ 2023-07-18 15:40:52 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:40:52 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:40:52 request.py | INFO | [method]: GET      [url]: https://httpbin.org/get 
+ 2023-07-18 15:40:52 request.py | DEBUG | [params]:
+ {
+  "Jerry": "jerry123"
+}
+ 2023-07-18 15:40:56 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:40:56 request.py | INFO | successful with status 200
+ 2023-07-18 15:40:56 request.py | DEBUG | [type]: json      [time]: 4.192935
+ 2023-07-18 15:40:56 request.py | DEBUG | [response]:
+ {
+  "args": {
+    "Jerry": "jerry123"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b64206-4cab0f7c677596de7bcb097f"
+  },
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/get?Jerry=jerry123"
+}
+ 2023-07-18 15:40:56 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:40:56 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:40:56 request.py | INFO | [method]: GET      [url]: https://httpbin.org/get 
+ 2023-07-18 15:40:56 request.py | DEBUG | [params]:
+ {
+  "Elnora": "West"
+}
+ 2023-07-18 15:40:58 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:40:58 request.py | INFO | successful with status 200
+ 2023-07-18 15:40:58 request.py | DEBUG | [type]: json      [time]: 2.466161
+ 2023-07-18 15:40:58 request.py | DEBUG | [response]:
+ {
+  "args": {
+    "Elnora": "West"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b64209-3abad6fb063ff3062e0a3d6c"
+  },
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/get?Elnora=West"
+}
+ 2023-07-18 15:40:58 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:40:58 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:40:58 request.py | INFO | [method]: GET      [url]: https://httpbin.org/get 
+ 2023-07-18 15:40:58 request.py | DEBUG | [params]:
+ {
+  "Leon": "Richard"
+}
+ 2023-07-18 15:41:02 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:41:02 request.py | INFO | successful with status 200
+ 2023-07-18 15:41:02 request.py | DEBUG | [type]: json      [time]: 3.573644
+ 2023-07-18 15:41:02 request.py | DEBUG | [response]:
+ {
+  "args": {
+    "Leon": "Richard"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b6420c-09fa2e1b3ab50d46172ddf17"
+  },
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/get?Leon=Richard"
+}
+ 2023-07-18 15:41:02 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:41:02 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:41:02 request.py | INFO | [method]: POST      [url]: https://httpbin.org/post 
+ 2023-07-18 15:41:02 request.py | DEBUG | [data]:
+ {
+  "user1": "abc123"
+}
+ 2023-07-18 15:41:06 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:41:06 request.py | INFO | successful with status 200
+ 2023-07-18 15:41:06 request.py | DEBUG | [type]: json      [time]: 3.991817
+ 2023-07-18 15:41:06 request.py | DEBUG | [response]:
+ {
+  "args": {},
+  "data": "",
+  "files": {},
+  "form": {
+    "user1": "abc123"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Content-Length": "12",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b6420f-16b0e64c63e7fbfe56053094"
+  },
+  "json": null,
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/post"
+}
+ 2023-07-18 15:41:06 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:41:06 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:41:06 request.py | INFO | [method]: POST      [url]: https://httpbin.org/post 
+ 2023-07-18 15:41:06 request.py | DEBUG | [data]:
+ {
+  "user2": "abc456"
+}
+ 2023-07-18 15:41:08 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:41:08 request.py | INFO | successful with status 200
+ 2023-07-18 15:41:08 request.py | DEBUG | [type]: json      [time]: 1.724805
+ 2023-07-18 15:41:08 request.py | DEBUG | [response]:
+ {
+  "args": {},
+  "data": "",
+  "files": {},
+  "form": {
+    "user2": "abc456"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Content-Length": "12",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b64213-46573b622b7fa7053f20718d"
+  },
+  "json": null,
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/post"
+}
+ 2023-07-18 15:41:08 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:41:08 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:41:08 request.py | INFO | [method]: POST      [url]: https://httpbin.org/post 
+ 2023-07-18 15:41:08 request.py | DEBUG | [data]:
+ {
+  "user3": "abc789"
+}
+ 2023-07-18 15:41:11 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:41:11 request.py | WARNING | unsuccessful with status 502
+ 2023-07-18 15:41:11 request.py | DEBUG | [warning]: failed to convert res to json, try to convert to text
+ 2023-07-18 15:41:11 request.py | TRACE | [warning]: Expecting value: line 1 column 1 (char 0)
+ 2023-07-18 15:41:11 request.py | DEBUG | [type]: text      [time]: 2.944486
+ 2023-07-18 15:41:11 request.py | DEBUG | [response]:
+ <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+</body>
+</html>
+
+ 2023-07-18 15:41:11 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:41:11 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:41:11 request.py | INFO | [method]: POST      [url]: https://httpbin.org/post 
+ 2023-07-18 15:41:11 request.py | DEBUG | [data]:
+ {
+  "user3": "abc789"
+}
+ 2023-07-18 15:41:48 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:41:48 request.py | INFO | successful with status 200
+ 2023-07-18 15:41:48 request.py | DEBUG | [type]: json      [time]: 37.133855
+ 2023-07-18 15:41:48 request.py | DEBUG | [response]:
+ {
+  "args": {},
+  "data": "",
+  "files": {},
+  "form": {
+    "user3": "abc789"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Content-Length": "12",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b64218-0879b95630546b7f5db3370a"
+  },
+  "json": null,
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/post"
+}
+ 2023-07-18 15:41:48 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:41:48 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:41:48 request.py | INFO | [method]: POST      [url]: https://httpbin.org/post 
+ 2023-07-18 15:41:48 request.py | DEBUG | [data]:
+ {
+  "key1": "value1"
+}
+ 2023-07-18 15:41:52 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:41:52 request.py | INFO | successful with status 200
+ 2023-07-18 15:41:52 request.py | DEBUG | [type]: json      [time]: 4.527295
+ 2023-07-18 15:41:52 request.py | DEBUG | [response]:
+ {
+  "args": {},
+  "data": "",
+  "files": {},
+  "form": {
+    "key1": "value1"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Content-Length": "11",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b6423d-24a569580b4d22ee38066269"
+  },
+  "json": null,
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/post"
+}
+ 2023-07-18 15:41:52 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:41:52 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:41:52 request.py | INFO | [method]: POST      [url]: https://httpbin.org/post 
+ 2023-07-18 15:41:52 request.py | DEBUG | [data]:
+ {
+  "key2": "value2"
+}
+ 2023-07-18 15:41:57 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:41:57 request.py | INFO | successful with status 200
+ 2023-07-18 15:41:57 request.py | DEBUG | [type]: json      [time]: 4.371976
+ 2023-07-18 15:41:57 request.py | DEBUG | [response]:
+ {
+  "args": {},
+  "data": "",
+  "files": {},
+  "form": {
+    "key2": "value2"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Content-Length": "11",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b64241-160db0f92e57397d4ac33da6"
+  },
+  "json": null,
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/post"
+}
+ 2023-07-18 15:41:57 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:41:57 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:41:57 request.py | INFO | [method]: POST      [url]: https://httpbin.org/post 
+ 2023-07-18 15:41:57 request.py | DEBUG | [data]:
+ {
+  "key3": "value3"
+}
+ 2023-07-18 15:41:59 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:41:59 request.py | INFO | successful with status 200
+ 2023-07-18 15:41:59 request.py | DEBUG | [type]: json      [time]: 2.810591
+ 2023-07-18 15:41:59 request.py | DEBUG | [response]:
+ {
+  "args": {},
+  "data": "",
+  "files": {},
+  "form": {
+    "key3": "value3"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Content-Length": "11",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b64246-132e0cf16e5225516cd34074"
+  },
+  "json": null,
+  "origin": "203.176.241.236",
+  "url": "https://httpbin.org/post"
+}
+ 2023-07-18 15:41:59 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:41:59 request.py | DEBUG | Execute get_login_user - args: (<common.user_login.Common object at 0x10590cc10>,)
+ 2023-07-18 15:41:59 request.py | DEBUG | Execute get_login_user - kwargs: {}
+ 2023-07-18 15:41:59 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:41:59 request.py | INFO | [method]: GET      [url]: http://httpbin.org/get 
+ 2023-07-18 15:41:59 request.py | DEBUG | [headers]:
+ {
+  "Account": "bugmaster"
+}
+ 2023-07-18 15:42:02 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:42:02 request.py | INFO | successful with status 200
+ 2023-07-18 15:42:02 request.py | DEBUG | [type]: json      [time]: 2.592977
+ 2023-07-18 15:42:02 request.py | DEBUG | [response]:
+ {
+  "args": {},
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Account": "bugmaster",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b64248-79a30ab14c700a5b64e355a5"
+  },
+  "origin": "203.176.241.236",
+  "url": "http://httpbin.org/get"
+}
+ 2023-07-18 15:42:02 request.py | DEBUG | Execute get_login_user - response:
+ {'args': {}, 'headers': {'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Account': 'bugmaster', 'Host': 'httpbin.org', 'User-Agent': 'python-requests/2.31.0', 'X-Amzn-Trace-Id': 'Root=1-64b64248-79a30ab14c700a5b64e355a5'}, 'origin': '203.176.241.236', 'url': 'http://httpbin.org/get'}
+ 2023-07-18 15:42:02 request.py | INFO | Execute get_login_user - 获取登录用户名 success!
+ 2023-07-18 15:42:02 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:42:02 request.py | INFO | [method]: POST      [url]: http://httpbin.org/post 
+ 2023-07-18 15:42:02 request.py | DEBUG | [data]:
+ {
+  "username": "bugmaster"
+}
+ 2023-07-18 15:42:06 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:42:06 request.py | INFO | successful with status 200
+ 2023-07-18 15:42:06 request.py | DEBUG | [type]: json      [time]: 4.415727
+ 2023-07-18 15:42:06 request.py | DEBUG | [response]:
+ {
+  "args": {},
+  "data": "",
+  "files": {},
+  "form": {
+    "username": "bugmaster"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Content-Length": "18",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.31.0",
+    "X-Amzn-Trace-Id": "Root=1-64b6424b-22f7d1432fd363f43d02fe86"
+  },
+  "json": null,
+  "origin": "203.176.241.236",
+  "url": "http://httpbin.org/post"
+}
+ 2023-07-18 15:42:06 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-07-18 15:42:06 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:42:06 request.py | INFO | [method]: GET      [url]: https://httpbin.org/cookies/set/sessioncookie/123456789 
+ 2023-07-18 15:42:13 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:42:13 request.py | INFO | successful with status 200
+ 2023-07-18 15:42:13 request.py | DEBUG | [type]: json      [time]: 3.0753
+ 2023-07-18 15:42:13 request.py | DEBUG | [response]:
+ {
+  "cookies": {
+    "sessioncookie": "123456789"
+  }
+}
+ 2023-07-18 15:42:13 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:42:13 request.py | INFO | [method]: GET      [url]: https://httpbin.org/cookies 
+ 2023-07-18 15:42:16 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:42:16 request.py | INFO | successful with status 200
+ 2023-07-18 15:42:16 request.py | DEBUG | [type]: json      [time]: 2.42951
+ 2023-07-18 15:42:16 request.py | DEBUG | [response]:
+ {
+  "cookies": {
+    "sessioncookie": "123456789"
+  }
+}
+ 2023-07-18 15:42:16 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:42:16 request.py | INFO | [method]: GET      [url]: https://httpbin.org/cookies/set/sessioncookie/123456789 
+ 2023-07-18 15:42:33 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:42:33 request.py | INFO | successful with status 200
+ 2023-07-18 15:42:33 request.py | DEBUG | [type]: json      [time]: 14.746772
+ 2023-07-18 15:42:33 request.py | DEBUG | [response]:
+ {
+  "cookies": {
+    "sessioncookie": "123456789"
+  }
+}
+ 2023-07-18 15:42:33 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-07-18 15:42:33 request.py | INFO | [method]: GET      [url]: https://httpbin.org/cookies 
+ 2023-07-18 15:42:55 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-07-18 15:42:55 request.py | INFO | successful with status 200
+ 2023-07-18 15:42:55 request.py | DEBUG | [type]: json      [time]: 22.212799
+ 2023-07-18 15:42:55 request.py | DEBUG | [response]:
+ {
+  "cookies": {
+    "sessioncookie": "123456789"
+  }
+}
+ 2023-07-18 15:42:55 runner.py | SUCCESS | generated html file: file:////Users/klook/Documents/Mega/project/ITCProject/api-testing/reports/2023_07_18_15_38_00_result.html
+ 2023-07-18 15:42:55 runner.py | SUCCESS | generated log file: file:////Users/klook/Documents/Mega/project/ITCProject/api-testing/reports/seldom_log.log
